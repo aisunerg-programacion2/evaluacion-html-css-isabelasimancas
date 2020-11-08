@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Izzy-Etiquetas para numeración y viñetas</title>
+  <link rel="shortcut icon" type="image/x-icon" href="imagenes/favicon.ico">
+  <link rel="stylesheet" type="text/css" href="css/estilos.css">
+</head>
+<body>
+<header>
+	<div>
+		<img src="imagenes/favicon-114.png" width="100" alt="Logotipo de Isabela Simancas" title="Logotipo de Isabela Simancas">
+	</div>
+	<nav>
+		<ul>
+			<li><a target="_blank" href="second.html">Etiquetas de texto</a></li>
+			<li><a target="_blank" href="third.html">Etiquetas de encabezados</a></li>
+			<li><a target="_blank" href="fourth.html">Etiquetas para tablas</a></li>
+			<li><a target="_blank" href="fifth.html">Etiquetas para numeración y viñetas</a></li>
+			<li><a target="_blank" href="sixth.html">Etiquetas para formularios y cargas de datos</a></li>
+		</ul>
+	</nav>
+</header>
+<section class="main">
+	<section class="articles">
+		<article>
+			<h2 align="center"><u>Etiquetas para numeración y viñetas</u></h2>
+				<p align="justify">Las listas en html son elementos muy importantes de alto significado semántico, en esta ocasión aprenderemos todo sobre ellas, además aprenderemos a hacer listas ordenadas y sin ordenar, con viñetas de varios tipos, etc. sin más, empecemos con la lección.</p>	
+		</article>
+		<article>
+			<h2 align="center"><u>Cómo hacer listas ol y ul HTML</u></h2>
+			<p align="justify">
+				Para empezar, existen dos tipos de listas html en general: listas ordenadas y listas sin ordenar, a continuación veamos como se implementa cada uno y sus diferencias.
+			</p>
+		</article>
+		<article>
+			<h2 align="center"><u>Listas no ordenadas &lt;ul&gt; en HTML</u></h2>
+			<p align="justify">
+				Una lista no ordenada en HTML es aquella en la que los elementos no están enumerados ni marcados por algún caracter que designe orden. Los elementos están simplemente listadas con alguna viñeta predeterminada como puede ser un punto u otro tipo como veremos más adelante.
+			</p>
+			<br/>
+			<h3 align="center"><u>Etiqueta &lt;ul&gt;</u></h3>
+			<p align="justify">
+				Una etiqueta &lt;ul&gt; contiene a todas los elementos de la lista y dentro de ella irán los atributos que afectan a toda la lista en bloque.
+			</p>
+			<br/>
+			<h3 align="center"><u>Etiqueta &lt;li&gt;</u></h3>
+			<p align="justify">
+				Los elementos de la lista propiamente dichos, se especifican en una etiqueta &lt;li&gt;, de tal manera que cada elemento es independiente de otro elemento.
+			</p>
+			<br/><img src="imagenes/ejemplo1.png" width="550" alt="listas1" title="Ejemplo de lista desordenada">
+		</article>
+		<article>
+			<h2 align="center"><u>Listas ordenadas &lt;ol&gt; en HTML</u></h2>
+			<p align="justify">
+				Una lista ordenada en HTML es aquella en la que los elementos estan enumerados o marcado con algún signo alfanumérico que indique el orden de los elementos.
+			</p>
+			<br/>
+			<h3 align="center"><u>Etiqueta &lt;ol&gt;</u></h3>
+			<p>Se utiliza la etiqueta html &lt;ol&gt; para crear listas ordenadas, entre la etiqueta de apertura y cierre irán los elementos de la lista dentro de una etiqueta &lt;li&gt; respectivamente.</p>
+			<br/>
+			<h3 align="center"><u>Etiqueta &lt;li&gt;</u></h3>
+			<p align="justify">
+				En cualquier caso la etiqueta &lt;li&gt; sirve para indicar los elementos de la lista, independientemente de si son ordenadas o desordenadas.
+			</p>
+			<br/><img src="imagenes/ejemplo2.png" width="550" alt="listas2" title="Ejemplo de lista ordenada">
+		</article>
+		<article>
+			<h2 align="center"><u>Cómo poner viñetas en listas de HTML</u></h2>
+			<p align="justify">
+				Poner viñetas en una lista html es tan fácil como lo veremos a continuación, se trata de poner estilo a nuestro elemento de lista y para ello emplearemos el atributo STYLE con unos valores pensados para este fin, veamos:
+			</p>
+			<br/>
+			<h3 align="center"><u>Atributo style</u></h3>
+			<p align="justify">
+				Para crear listas con viñetas en HTML utilizamos el atributo style, esto indicará que la lista tendrá un estilo especial, emplea una propiedad y en este caso será la propiedad de list-style-type y básicamente hace referencia al tipo de viñeta, finalmente el valor de dicha propiedad determina el tipo de viñeta que se mostrará, en nuestro caso queremos poner viñetas diferentes a los predeterminados ¿verdad? Pues bien, conozcamos los posibles valores que puede tomar y su respectiva descripción.
+			</p>
+			<br/>
+			<h3 align="center"><u>Valores para tipos de viñeta HTML</u></h3>
+			<br/>
+			<ul>
+				<li>disc: Este es el valor predeterminado.</li>
+				<br/>
+				<li>circle: Muestra marcador es un círculo hueco.</li>
+				<br/>
+				<li>square: Muestra marcador es un cuadrado.</li>
+				<br/>
+				<li>decimal: Marcador es un número decimal, que comienza con 1.</li>
+				<br/>
+				<li>lower-roman: Marcador es un número romano en minúscula (i, ii, iii, iv, v, etc.)</li>
+				<br/>
+				<li>upper-roman: El marcador es un número romano en mayúscula (I, II, III, IV, V, etc.)</li>
+			</ul>
+			<br/><img src="imagenes/ejemplo3.png" width="550" alt="viñeta" title="Ejemplo de viñeta">
+			<br/><br/>
+			<h3 align="center"><u>Ejemplo de imagen en viñeta de lista HTML</u></h3>
+			<p>
+				En el siguiente ejemplo veremos como se emplea la propiedad list-style-image para poner una imagen cualquiera (Que esta almacenada en la misma carpeta que nuestro documento html) como viñeta de nuestras listas, este le dará un aspecto espectacular a nuestra lista.
+			</p>
+			<br/><img src="imagenes/1234567.png" width="550" alt="viñeta de imagen" title="Ejemplo de viñeta con imagen">
+
+		</article>
+	</section>
+	<aside>
+		<h3 align="center"><u>Ejemplo de listas no ordenadas &lt;ul&gt;</u></h3>
+		<br/><img src="imagenes/1234.png" width="230" alt="ejemplo listas1" title="Ejemplo de lista  no ordenada en código">
+		<br/>
+		<h3 align="center"><u>Ejemplo de listas ordenadas &lt;ol&gt;</u></h3>
+		<br/><img src="imagenes/12345.png" width="230" alt="ejemplo listas2" title="Ejemplo de lista ordenada en código">
+		<h3 align="center"><u>Ejemplo de viñetas en listas &lt;ol&gt;</u></h3>
+		<br/><img src="imagenes/123456.png" width="230" alt="ejemplo listas3" title="Ejemplo de viñeta en código">
+		<br/>
+		<h3 align="center"><u>Ejemplo de viñeta con imagen</u></h3>
+		<br/><img src="imagenes/ejemplo4.png" width="230" alt="viñeta con imagen" title="Ejemplo de viñeta con imagen en código">
+	</aside>
+</section>
+ <footer>
+ 	<p>Isabela Simancas - 2020</p>
+ </footer>
+</body>
+</html>
